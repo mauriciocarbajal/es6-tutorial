@@ -48,16 +48,8 @@ var p = new Parent();
 Parent.foo();	//static method
 ```
 
-# async functions
+# generator functions
 ```javascript
-async function(){
-	var f = await $.get("http:// ... ");
-	console.log(f);
-}
-
-// that function returns a promise object
-// further: generator functions
-
 function* idMaker() {
   var index = 0;
   while (index < 3)
